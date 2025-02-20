@@ -8,6 +8,7 @@ import StudentDashboard from './pages/StudentDashboard';
 import ProtectedRoute from './components/ProtectedRoute';
 import AuthProvider from './context/AuthContext';
 import SignUp from './pages/SignUp';
+import Home from './pages/Home';
 
 const App = () => {
   return (
@@ -15,7 +16,8 @@ const App = () => {
       
         <Navbar />
         <Routes>
-          <Route path="/" element={<SignUp />} />
+          <Route path="/" element={<Home/>}/>
+          <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
           <Route path="/teacher" element={<ProtectedRoute role="teacher"><TeacherDashboard /></ProtectedRoute>} />
