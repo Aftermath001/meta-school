@@ -6,7 +6,7 @@ const Navbar = () => {
   const { user, logout } = useContext(AuthContext);
   return (
     <nav className="bg-blue-500 p-4 text-white flex justify-between">
-      <h1 className="text-lg font-bold">LMS</h1>
+      <h1 className="text-lg font-bold">META SCHOOL</h1>
       <div>
         {user ? (
           <>
